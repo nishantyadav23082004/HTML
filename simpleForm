@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body style="background-color:rgba(0, 128, 255, 0.374);text-align:center;">
+
+<h1>Don't have an account?! Want to join us?!</h1>
+
+<pre>
+<form action="">
+Name         <input type="text" placeholder="FirstName LastName">
+
+Email ID     <input type="email" placeholder="Email ID">
+
+Select city<select name="city">
+<option value="select">Select</option>
+<option value="new delhi">New Delhi</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="chennai">Chennai</option>
+<option value="bengaluru">Bengaluru</option>
+</select>
+Gender   <input type="radio" name="male" value="male">Male  <input type="radio" name="female" value="female">Female  <input type="radio" name="other" value="other">Other
+Password <input type="password" placeholder="Password">
+         <input type="checkbox"> I agree to the terms and conditions
+         <input type="submit"> <input type="reset">
+</pre>
+</form>
+
+</body>
+</html>
