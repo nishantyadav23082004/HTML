@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function beautiful(){
+            document.getElementById("second").innerHTML = "Beautiful";
+        }
+        function amazing(){
+            document.getElementById("second").innerHTML = "Amazing";
+        }
+    </script>
+</head>
+    <body style="text-align: center;">
+
+        <p id="first">Welcome to the <span id="second">Beautiful</span> world</p>
+        <button type="button" onclick="beautiful()">Make Beautiful</button>
+        <button type="button" onclick="amazing()">Make Amazing</button>
+    </body>
+</html>
