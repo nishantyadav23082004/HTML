@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div id="myDiv">
+        <p id="para1">Old Paragraph</p>
+        </div>
+
+    <button onclick="updateParagraph()">Update Paragraph</button>
+
+    <script>
+        function updateParagraph() {
+            // Get the div element
+            const divElement = document.getElementById("myDiv");
+
+            // Get all paragraph elements within the div
+            const paragraphs = divElement.getElementsByTagName("p");
+
+            // Iterate through each paragraph and update its text
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].textContent = "Updated Text";
+            }
+        }
+    </script>
+    
+</body>
+</html>
