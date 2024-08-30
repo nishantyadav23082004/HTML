@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="demo">This is the first paragraph</p>
+
+    <button onclick="addListItem()">Add List Item</button>
+    <button onclick="removeLastItem()">Remove Last Item</button>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        function addListItem() {
+            // Get a reference to the unordered list with the ID "myList"
+            const list = document.getElementById("myList");
+
+            // Create a new list item element
+            const newItem = document.createElement("li");
+
+            // Set the text content of the new list item to "New Item"
+            newItem.textContent = "New Item";
+
+            // Append the new list item to the end of the unordered list
+            list.appendChild(newItem);
+        }
+
+        function removeLastItem() {
+            // Get a reference to the unordered list with the ID "myList"
+            const list = document.getElementById("myList");
+
+            // Check if the list has any child nodes
+            if (list.hasChildNodes()) {
+                // Remove the last child node from the list (which is the last list item)
+                list.removeChild(list.lastChild);
+            }
+        }
+    </script>
+
+</body>
+</html>
