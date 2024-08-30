@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Hello</p>
+    <p>Hi</p>
+
+    <input type="text" onkeypress="changeBackgroundColor(event)">
+
+    <button type="submit" onmouseover="myFunction()" onmouseout="resetColor()" id="button1">Submit</button>
+</body>
+
+<script>
+    function changeBackgroundColor(event) {
+        document.getElementById("inputField").style.backgroundColor = "red";
+    }
+
+    function myFunction() {
+        document.getElementById("button1").style.backgroundColor = "yellow";
+    }
+
+    function resetColor() {
+        document.getElementById("button1").style.backgroundColor = "white"; // Replace "white" with the original background color
+    }
+</script>
+</html>
