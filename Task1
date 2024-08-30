@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="demo">This is the first paragraph</p>
+
+    <button onclick="changeFirstPara()">Change The First Paragraph</button>
+
+    <script>
+        function changeFirstPara() {
+            document.getElementById("demo").textContent = "Hello World!";
+        }
+    </script>
+
+</body>
+</html>
