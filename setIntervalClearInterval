@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="periodic()">Start A Periodic Function</button>
+    <button onclick="stopPeriodic()">Stop Periodic Function</button>
+    <p id="status"></p>
+
+    <script>
+        let intervalId;
+
+        function periodic() {
+            intervalId = setInterval(function() {
+                alert("Hello");
+            }, 3000); // 3000 milliseconds (3 seconds)
+
+            // Update the status message
+            document.getElementById("status").textContent = "Periodic function started.";
+        }
+
+        function stopPeriodic() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null; // Reset the interval ID
+
+                // Update the status message
+                document.getElementById("status").textContent = "Periodic function stopped.";
+            } else {
+                // Handle the case where the interval ID is not defined
+                console.error("Interval ID is not defined.");
+            }
+        }
+    </script>
+
+</body>
+</html>
