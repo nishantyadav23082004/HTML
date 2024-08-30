@@ -3,7 +3,10 @@
 <body>
 
     <div id="myDiv">
-        <p id="para1">Old Paragraph</p>
+        <p id="para1">Old Para1</p>
+        <p id="para2">Old Para2</p>
+        <p id="para3">Old Para3</p>
+        <p id="para4">Old Para4</p>
         </div>
 
     <button onclick="updateParagraph()">Update Paragraph</button>
@@ -22,6 +25,6 @@
             }
         }
     </script>
-    
+
 </body>
 </html>
