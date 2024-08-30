@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <p class="text">First Paragraph</p>
+            <p class="text">Second Paragraph</p>
+        </div>
+
+        <button onclick="changeAllParagraphs()">Change All Paragraphs</button>
+
+        <script>
+            function changeAllParagraphs(){
+                const para1 = document.querySelectorAll(".text");
+                for(let i=0;i<para1.length;i++){
+                    para1[i].textContent = `Paragraph ${i+1} has been changed.`;
+                }
+            }
+        </script>
+    </body>
+</html>
