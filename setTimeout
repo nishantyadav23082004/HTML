@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="periodic()">Click</button>
+
+    <script>
+        function periodic() {
+            // Start a periodic function that calls Function1 every 4000 milliseconds
+            const intervalId = setInterval(Function1, 4000);
+
+            // Define the Function1 that will be called periodically
+            function Function1() {
+                alert("Welcome");
+            }
+
+            // Set a timeout to clear the interval after 16000 milliseconds (4 seconds)
+            setTimeout(function() {
+                clearInterval(intervalId);
+            }, 16000);
+        }
+    </script>
+
+</body>
+</html>
